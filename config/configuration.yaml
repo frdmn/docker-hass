@@ -35,6 +35,11 @@ camera:
     still_image_url: !secret octoprint_webcam_still
     mjpeg_url: !secret octoprint_webcam_stream
 
+tts:
+  - platform: amazon_polly
+    aws_access_key_id: !secret aws_access
+    aws_secret_access_key: !secret aws_secret
+
 # Enables the frontend
 frontend:
 
@@ -71,10 +76,6 @@ map:
 
 # Track the sun
 sun:
-
-# Text to speech
-tts:
-  - platform: google
 
 # Cloud
 cloud:
