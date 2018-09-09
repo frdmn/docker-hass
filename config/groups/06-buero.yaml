@@ -3,8 +3,19 @@ buero:
   view: yes
   entities:
     - group.buero_lights
+    - group.octoprint
 
 buero_lights:
   name: Büro Lampen
   entities:
     - light.deckenlampe_6
+
+octoprint:
+  name: Ender 3
+  entities:
+    - sensor.octoprint_actual_bed_temp
+    - sensor.octoprint_actual_tool0_temp
+    - sensor.octoprint_current_state
+    - sensor.octoprint_job_percentage
+    - sensor.octoprint_target_bed_temp
+    - sensor.octoprint_target_tool0_temp

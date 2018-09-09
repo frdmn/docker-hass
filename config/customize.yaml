@@ -8,3 +8,23 @@ sensor.dark_sky_summary:
   friendly_name: Überblick
 sensor.dark_sky_temperature:
   friendly_name: Termperatur
+
+# Ender 3 friendly names
+
+sensor.octoprint_actual_bed_temp:
+  friendly_name: Bett IST
+  icon: mdi:thermometer
+sensor.octoprint_actual_tool0_temp:
+  friendly_name: Düse IST
+  icon: mdi:thermometer
+sensor.octoprint_current_state:
+  icon: mdi:printer-3d
+sensor.octoprint_job_percentage:
+  icon: mdi:percent
+  friendly_name: Job %
+sensor.octoprint_target_bed_temp:
+  friendly_name: Bett SOLL
+  icon: mdi:thermometer
+sensor.octoprint_target_tool0_temp:
+  friendly_name: Düse SOLL
+  icon: mdi:thermometer

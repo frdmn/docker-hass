@@ -15,6 +15,12 @@ logger:
   logs:
     homeassistant.components.shell_command: debug
 
+octoprint:
+  host: !secret host_octoprint
+  api_key: !secret key_octoprint
+  bed: true
+  number_of_tools: 1
+
 # Enables the frontend
 frontend:
 
