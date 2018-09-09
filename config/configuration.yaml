@@ -13,6 +13,11 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
+logger:
+  default: error
+  logs:
+    homeassistant.components.shell_command: debug
+
 # Show links to resources in log and frontend
 introduction:
 
