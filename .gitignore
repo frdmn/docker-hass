@@ -5,6 +5,7 @@ config/.storage
 config/.uuid
 config/deps
 config/tts
+config/icloud
 
 config/known_devices.yaml
 config/plex.yaml

@@ -1,4 +1,4 @@
-family:
+familie:
   name: Familie
   entities:
     - group.jonas
@@ -7,9 +7,9 @@ family:
 jonas:
   name: Jonas
   entities:
-    - !secret device_jonas-iphone
+    - device_tracker.iphone
 
 marian:
   name: Marian
   entities:
-    - !secret device_marian-iphone
+    - device_tracker.iphonevriedmann
