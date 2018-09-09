@@ -3,6 +3,7 @@ default_view:
   view: yes
   entities:
     - group.weather
+    - group.family_info
 
 weather:
   name: Familie
@@ -11,3 +12,9 @@ weather:
   - sensor.dark_sky_temperature
   - sensor.dark_sky_precip_probability
   - sensor.dark_sky_cloud_coverage
+
+family_info:
+  name: Familie
+  entities:
+    - group.jonas
+    - group.marian

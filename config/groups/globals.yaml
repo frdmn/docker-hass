@@ -1,0 +1,15 @@
+family:
+  name: Familie
+  entities:
+    - group.jonas
+    - group.marian
+
+jonas:
+  name: Jonas
+  entities:
+    - !secret device_jonas-iphone
+
+marian:
+  name: Marian
+  entities:
+    - !secret device_marian-iphone
