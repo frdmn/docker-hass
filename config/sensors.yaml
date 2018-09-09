@@ -1,0 +1,7 @@
+- platform: darksky
+  api_key: !secret darksky_key
+  language: de
+  monitored_conditions:
+    - cloud_cover
+    - summary
+    - temperature

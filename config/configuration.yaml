@@ -20,6 +20,7 @@ logger:
 
 # Show links to resources in log and frontend
 introduction:
+sensor: !include sensors.yaml
 
 # Enables the frontend
 frontend:
@@ -57,10 +58,6 @@ map:
 
 # Track the sun
 sun:
-
-# Weather prediction
-sensor:
-  - platform: yr
 
 # Text to speech
 tts:
