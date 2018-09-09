@@ -1,0 +1,9 @@
+jonas:
+  name: Jonas
+  view: yes
+  entities:
+    - group.jonas_lights
+
+jonas_lights:
+  - light.deckenlampe_5
+  - light.stehlampe
