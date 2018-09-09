@@ -3,5 +3,6 @@
   language: de
   monitored_conditions:
     - cloud_cover
+    - precip_probability
     - summary
     - temperature
