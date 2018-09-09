@@ -16,8 +16,8 @@ logger:
     homeassistant.components.shell_command: debug
 
 octoprint:
-  host: !secret host_octoprint
-  api_key: !secret key_octoprint
+  host: !secret octoprint_host
+  api_key: !secret octoprint_key
   bed: true
   number_of_tools: 1
 
