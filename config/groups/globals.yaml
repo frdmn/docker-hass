@@ -4,12 +4,12 @@ familie:
     - group.jonas
     - group.marian
 
-jonas:
+human_jonas:
   name: Jonas
   entities:
-    - device_tracker.iphone
+    - !secret device_jonas-iphone
 
-marian:
+human_marian:
   name: Marian
   entities:
-    - device_tracker.iphonevriedmann
+    - !secret device_marian-iphone
