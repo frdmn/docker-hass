@@ -10,5 +10,6 @@ config/tts
 #config/known_devices.yaml
 #config/packages/internet_sites.yaml
 #config/packages/traffic.yaml
+config/plex.yaml
 config/secrets.yaml
 #config/zones.yaml
