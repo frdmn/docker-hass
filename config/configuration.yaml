@@ -5,6 +5,7 @@ homeassistant:
   elevation: !secret home_elevation
   unit_system: metric
   time_zone: Europe/Berlin
+  customize: !include customize.yaml
 
 group: !include_dir_merge_named groups
 sensor: !include sensors.yaml

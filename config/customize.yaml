@@ -8,4 +8,3 @@ sensor.dark_sky_summary:
   friendly_name: Überblick
 sensor.dark_sky_temperature:
   friendly_name: Termperatur
-
