@@ -5,5 +5,7 @@ jonas:
     - group.jonas_lights
 
 jonas_lights:
-  - light.deckenlampe_5
-  - light.stehlampe
+  name: Jonas' Lampen
+  entities:
+    - light.deckenlampe_5
+    - light.stehlampe

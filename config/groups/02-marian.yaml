@@ -5,8 +5,10 @@ marian:
     - group.marian_lights
 
 marian_lights:
-  - light.deckenlampe_4
-  - light.bodenlampe
-  - light.fernsehlampe
-  - light.nachttisch_links
-  - light.nachttisch_rechts
+  name: Marian's Lampen
+  entities:
+    - light.deckenlampe_4
+    - light.bodenlampe
+    - light.fernsehlampe
+    - light.nachttisch_links
+    - light.nachttisch_rechts

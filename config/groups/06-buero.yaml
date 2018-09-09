@@ -5,4 +5,6 @@ buero:
     - group.buero_lights
 
 buero_lights:
-  - light.deckenlampe_6
+  name: Büro Lampen
+  entities:
+    - light.deckenlampe_6
