@@ -1,0 +1,14 @@
+config/*.db
+config/*.log
+config/.google.token
+config/.storage
+config/.uuid
+config/deps
+config/tts
+
+#config/google_calendars.yaml
+#config/known_devices.yaml
+#config/packages/internet_sites.yaml
+#config/packages/traffic.yaml
+config/secrets.yaml
+#config/zones.yaml
