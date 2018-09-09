@@ -1,0 +1,8 @@
+kueche:
+  name: Küche
+  view: yes
+  entities:
+    - group.kueche_lights
+
+kueche_lights:
+  - light.deckenlampe_2

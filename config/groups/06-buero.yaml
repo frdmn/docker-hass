@@ -1,0 +1,8 @@
+buero:
+  name: Büro
+  view: yes
+  entities:
+    - group.buero_lights
+
+buero_lights:
+  - light.deckenlampe_6

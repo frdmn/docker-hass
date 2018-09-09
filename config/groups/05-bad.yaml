@@ -1,0 +1,8 @@
+bad:
+  name: Bad
+  view: yes
+  entities:
+    - group.bad_lights
+
+bad_lights:
+  - light.deckenlampe_3

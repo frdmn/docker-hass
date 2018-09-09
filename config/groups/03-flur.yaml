@@ -1,0 +1,8 @@
+flur:
+  name: Flur
+  view: yes
+  entities:
+    - group.flur_lights
+
+flur_lights:
+  - light.deckenlampe
