@@ -31,7 +31,7 @@ device_tracker:
 
 camera:
   - platform: mjpeg
-    name: Ender 3 Live Feed
+    name: octoprint
     still_image_url: !secret octoprint_webcam_still
     mjpeg_url: !secret octoprint_webcam_stream
 
