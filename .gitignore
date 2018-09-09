@@ -6,10 +6,6 @@ config/.uuid
 config/deps
 config/tts
 
-#config/google_calendars.yaml
-#config/known_devices.yaml
-#config/packages/internet_sites.yaml
-#config/packages/traffic.yaml
+config/known_devices.yaml
 config/plex.yaml
 config/secrets.yaml
-#config/zones.yaml

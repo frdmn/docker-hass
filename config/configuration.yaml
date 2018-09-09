@@ -21,6 +21,15 @@ octoprint:
   bed: true
   number_of_tools: 1
 
+device_tracker:
+  - platform: netgear
+    host: !secret netgear_host
+    username: !secret netgear_user
+    password: !secret netgear_pass
+    new_device_defaults:
+      track_new_devices: True
+      hide_if_away: False
+
 # Enables the frontend
 frontend:
 
