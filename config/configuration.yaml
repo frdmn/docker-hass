@@ -29,6 +29,12 @@ device_tracker:
     username: !secret icloud_marian_user
     password: !secret icloud_marian_pass
 
+camera:
+  - platform: mjpeg
+    name: Ender 3 Live Feed
+    still_image_url: !secret octoprint_webcam_still
+    mjpeg_url: !secret octoprint_webcam_stream
+
 # Enables the frontend
 frontend:
 
