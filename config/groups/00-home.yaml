@@ -6,7 +6,7 @@ default_view:
     - group.family_info
 
 weather:
-  name: Familie
+  name: Wetter
   entities:
   - sensor.dark_sky_summary
   - sensor.dark_sky_temperature
