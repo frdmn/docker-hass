@@ -18,6 +18,7 @@ sensor.octoprint_actual_tool0_temp:
   friendly_name: Düse IST
   icon: mdi:thermometer
 sensor.octoprint_current_state:
+  friendly_name: Aktueller Zustand
   icon: mdi:printer-3d
 sensor.octoprint_job_percentage:
   icon: mdi:percent
@@ -28,3 +29,14 @@ sensor.octoprint_target_bed_temp:
 sensor.octoprint_target_tool0_temp:
   friendly_name: Düse SOLL
   icon: mdi:thermometer
+
+# Tado heating/climate names
+
+sensor.jonas_humidity:
+  friendly_name: Luftfeuchtigkeit
+sensor.marian_humidity:
+  friendly_name: Luftfeuchtigkeit
+sensor.jonas_heating:
+  friendly_name: Heiz-Zustand
+sensor.marian_heating:
+  friendly_name: Heiz-Zustand

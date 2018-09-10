@@ -3,9 +3,17 @@ jonas:
   view: yes
   entities:
     - group.jonas_lights
+    - group.jonas_climate
 
 jonas_lights:
   name: Jonas' Lampen
   entities:
     - light.deckenlampe_5
     - light.stehlampe
+
+jonas_climate:
+  name: Heizung/Klima
+  entities:
+    - climate.jonas
+    - sensor.jonas_humidity
+    - sensor.jonas_heating

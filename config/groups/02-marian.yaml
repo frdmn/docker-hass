@@ -3,6 +3,7 @@ marian:
   view: yes
   entities:
     - group.marian_lights
+    - group.marian_climate
 
 marian_lights:
   name: Marian's Lampen
@@ -12,3 +13,10 @@ marian_lights:
     - light.fernsehlampe
     - light.nachttisch_links
     - light.nachttisch_rechts
+
+marian_climate:
+  name: Heizung/Klima
+  entities:
+    - climate.marian
+    - sensor.marian_humidity
+    - sensor.marian_heating

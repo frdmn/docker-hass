@@ -2,8 +2,21 @@ default_view:
   name: "Home"
   view: yes
   entities:
-    - group.weather
     - group.family_info
+    - group.heating
+    - group.weather
+
+heating:
+  name: Heizung
+  entities:
+    - climate.jonas
+    - climate.marian
+
+family_info:
+  name: Familie
+  entities:
+    - group.human_jonas
+    - group.human_marian
 
 weather:
   name: Wetter
@@ -12,9 +25,3 @@ weather:
   - sensor.dark_sky_temperature
   - sensor.dark_sky_precip_probability
   - sensor.dark_sky_cloud_coverage
-
-family_info:
-  name: Familie
-  entities:
-    - group.human_jonas
-    - group.human_marian

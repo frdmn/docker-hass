@@ -35,6 +35,10 @@ camera:
     still_image_url: !secret octoprint_webcam_still
     mjpeg_url: !secret octoprint_webcam_stream
 
+tado:
+  username: !secret tado_user
+  password: !secret tado_pass
+
 tts:
   - platform: amazon_polly
     aws_access_key_id: !secret aws_access
