@@ -55,6 +55,18 @@ tts:
     aws_access_key_id: !secret aws_access
     aws_secret_access_key: !secret aws_secret
 
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_api
+    allowed_chat_ids:
+      - !secret telegram_chatid_jonas
+
+# Example configuration.yaml entry for the notifier
+notify:
+  - name: telegram_jonas
+    platform: telegram
+    chat_id: !secret telegram_chatid_jonas
+
 # Enables the frontend
 frontend:
 
