@@ -7,9 +7,9 @@ familie:
 human_jonas:
   name: Jonas
   entities:
-    - !secret device_jonas-iphone
+    - !secret device_jonas_iphone-gps
 
 human_marian:
   name: Marian
   entities:
-    - !secret device_marian-iphone
+    - !secret device_marian_iphone-gps
