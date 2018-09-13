@@ -5,6 +5,7 @@ default_view:
     - group.family_info
     - group.heating
     - group.weather
+    - group.octoprint
 
 heating:
   name: Heizung
