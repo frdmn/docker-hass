@@ -1,0 +1,4 @@
+- platform: command_line
+  name: tcp_octoprint
+  command: curl -m 10 -s http://192.168.1.240 > /dev/null && echo ON || echo OFF
+  scan_interval: 60
