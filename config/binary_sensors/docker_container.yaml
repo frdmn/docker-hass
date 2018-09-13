@@ -1,0 +1,49 @@
+- platform: command_line
+  name: container_owntracks
+  command: test $(/config/opt/scripts/container_status.sh hass_owntracks_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_plex
+  command: test $(/config/opt/scripts/container_status.sh media_plex_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_sabnzbd
+  command: test $(/config/opt/scripts/container_status.sh media_sabnzbd_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_radarr
+  command: test $(/config/opt/scripts/container_status.sh media_radarr_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_sonarr
+  command: test $(/config/opt/scripts/container_status.sh media_sonarr_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_ombi
+  command: test $(/config/opt/scripts/container_status.sh media_ombi_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_openvpn
+  command: test $(/config/opt/scripts/container_status.sh openvpn) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_speedtester
+  command: test $(/config/opt/scripts/container_status.sh speedtest_speedtest_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_netdata
+  command: test $(/config/opt/scripts/container_status.sh netdata_netdata_1) = running && echo ON || echo OFF
+  scan_interval: 10
+
+- platform: command_line
+  name: container_muximux
+  command: test $(/config/opt/scripts/container_status.sh media_muximux_1) = running && echo ON || echo OFF
+  scan_interval: 10
