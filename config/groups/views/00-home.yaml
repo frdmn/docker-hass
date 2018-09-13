@@ -6,6 +6,7 @@ default_view:
     - group.heating
     - group.weather
     - group.octoprint
+    - group.container_and_services
 
 heating:
   name: Heizung
@@ -26,3 +27,18 @@ weather:
   - sensor.dark_sky_temperature
   - sensor.dark_sky_precip_probability
   - sensor.dark_sky_cloud_coverage
+
+container_and_services:
+  name: Containers / Services
+  entities:
+  - binary_sensor.container_muximux
+  - binary_sensor.container_netdata
+  - binary_sensor.container_ombi
+  - binary_sensor.container_openvpn
+  - binary_sensor.container_owntracks
+  - binary_sensor.container_plex
+  - binary_sensor.container_radarr
+  - binary_sensor.container_sabnzbd
+  - binary_sensor.container_sonarr
+  - binary_sensor.container_speedtester
+  - binary_sensor.tcp_octoprint
