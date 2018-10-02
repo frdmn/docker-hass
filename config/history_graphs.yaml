@@ -5,3 +5,19 @@ power:
       - sensor.nas_power
       - sensor.tvmedia_power
       - sensor.waschmaschine_power
+
+power_jonas:
+    name: Stromverbrauch Jonas
+    entities:
+      - sensor.tvmedia_power
+
+power_bad:
+    name: Stromverbrauch Bad
+    entities:
+      - sensor.waschmaschine_power
+
+power_office:
+    name: Stromverbrauch Büro
+    entities:
+      - sensor.3d_drucker_power
+      - sensor.nas_power
