@@ -5,6 +5,7 @@ jonas:
     - group.jonas_lights
     - group.jonas_climate
     - group.media
+    - history_graph.stromverbrauch
 
 jonas_lights:
   name: Jonas' Lampen

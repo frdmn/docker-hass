@@ -4,6 +4,7 @@ bad:
   entities:
     - group.bad_lights
     - group.washer
+    - history_graph.stromverbrauch_bad
 
 bad_lights:
   name: Bad Lampen
