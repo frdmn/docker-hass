@@ -1,0 +1,7 @@
+power:
+    name: Power Graph
+    entities:
+      - sensor.3d_drucker_power
+      - sensor.nas_power
+      - sensor.tvmedia_power
+      - sensor.waschmaschine_power
