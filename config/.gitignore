@@ -1,0 +1,14 @@
+config/home-assistant_v2.db
+config/home-assistant_v2.db-wal
+config/home-assistant_v2.db-shm
+config/.google.token
+config/.homekit.state
+config/.storage
+config/.uuid
+config/*.log
+config/deps
+config/icloud
+config/known_devices.yaml
+config/plex.yaml
+config/secrets.yaml
+config/tts
