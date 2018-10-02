@@ -4,6 +4,7 @@ jonas:
   entities:
     - group.jonas_lights
     - group.jonas_climate
+    - group.media
 
 jonas_lights:
   name: Jonas' Lampen
@@ -17,3 +18,8 @@ jonas_climate:
     - climate.jonas
     - sensor.jonas_humidity
     - sensor.jonas_heating
+
+media:
+  name: TV/Media
+  entities:
+    - switch.tvmedia

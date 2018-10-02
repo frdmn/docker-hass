@@ -4,6 +4,7 @@ buero:
   entities:
     - group.buero_lights
     - group.octoprint
+    - group.nas
 
 buero_lights:
   name: Büro Lampen
@@ -13,6 +14,7 @@ buero_lights:
 octoprint:
   name: Ender 3
   entities:
+    - switch.3d_drucker
     - sensor.octoprint_actual_bed_temp
     - sensor.octoprint_actual_tool0_temp
     - sensor.octoprint_current_state
@@ -20,3 +22,9 @@ octoprint:
     - sensor.octoprint_target_bed_temp
     - sensor.octoprint_target_tool0_temp
     - camera.octoprint
+
+nas:
+  name: NAS
+  entities:
+    - switch.nas
+    - group.container_and_services

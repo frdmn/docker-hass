@@ -3,8 +3,14 @@ bad:
   view: yes
   entities:
     - group.bad_lights
+    - group.washer
 
 bad_lights:
   name: Bad Lampen
   entities:
     - light.deckenlampe_3
+
+washer:
+  name: Waschmaschine
+  entities:
+    - switch.waschmaschine
