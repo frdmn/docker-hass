@@ -7,7 +7,7 @@ default_view:
     - group.weather
     - group.octoprint
     - group.container_and_services
-    - history_graph.power
+    - history_graph.stromverbrauch
 
 heating:
   name: Heizung

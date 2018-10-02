@@ -1,5 +1,5 @@
 power:
-    name: Power Graph
+    name: Stromverbrauch
     entities:
       - sensor.3d_drucker_power
       - sensor.nas_power
