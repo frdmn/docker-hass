@@ -3,8 +3,9 @@ buero:
   view: yes
   entities:
     - group.buero_lights
-    - group.octoprint
+    - group.container_and_services
     - group.nas
+    - group.octoprint
 
 buero_lights:
   name: Büro Lampen
@@ -27,4 +28,3 @@ nas:
   name: NAS
   entities:
     - switch.nas
-    - group.container_and_services
