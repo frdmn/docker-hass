@@ -3,6 +3,7 @@ config/home-assistant_v2.db-wal
 config/home-assistant_v2.db-shm
 config/*.log
 config/.google.token
+config/.homekit.state
 config/.storage
 config/.uuid
 config/deps
