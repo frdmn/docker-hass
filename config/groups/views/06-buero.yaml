@@ -6,7 +6,7 @@ buero:
     - group.container_and_services
     - group.nas
     - group.octoprint
-    - history_graph.stromverbrauch_buero
+    - history_graph.stromverbrauch_buro
 
 buero_lights:
   name: Büro Lampen
