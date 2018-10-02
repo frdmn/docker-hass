@@ -10,5 +10,5 @@ config/tts
 config/icloud
 
 config/known_devices.yaml
-config/plex.yaml
+config/plex.conf
 config/secrets.yaml
