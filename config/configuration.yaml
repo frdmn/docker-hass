@@ -78,6 +78,8 @@ config:
 
 http:
   api_password: !secret hass_api_pass
+  ssl_certificate: /config/ssl/server.crt
+  ssl_key: /config/ssl/server.key
 
 # Checks for available updates
 # Note: This component will send some information about your system to
