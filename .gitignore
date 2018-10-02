@@ -7,10 +7,9 @@ config/.homekit.state
 config/.storage
 config/.uuid
 config/deps
-config/tts
 config/icloud
-
 config/known_devices.yaml
 config/plex.conf
 config/secrets.yaml
 config/ssl
+config/tts
