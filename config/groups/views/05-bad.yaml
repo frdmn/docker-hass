@@ -2,14 +2,16 @@ bad:
   name: Bad
   view: yes
   entities:
-    - group.bad_lights
+    - group.bathroom_general
     - group.washer
     - history_graph.stromverbrauch_bad
 
-bad_lights:
-  name: Bad Lampen
+bathroom_general:
+  name: Bad
   entities:
     - light.deckenlampe_3
+    - sensor.bathroom_light_level
+    - sensor.bathroom_temperature
 
 washer:
   name: Waschmaschine
