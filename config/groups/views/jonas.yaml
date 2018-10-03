@@ -8,7 +8,7 @@ jonas:
     - history_graph.stromverbrauch_jonas
 
 jonas_lights:
-  name: Jonas' Lampen
+  name: Lampen
   entities:
     - light.deckenlampe_5
     - light.stehlampe
