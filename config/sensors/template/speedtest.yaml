@@ -13,4 +13,4 @@
     speedtest_ping:
       friendly_name: "Ping"
       value_template: "{{ states.sensor.speedtest.attributes.ping }}"
-      unit_of_measurement: ms
+      unit_of_measurement: MS
