@@ -2,13 +2,8 @@
     name: Netgear traffic
     command: "/config/scripts/opt/runcached -c 300 /config/scripts/netgear_traffic.py"
     json_attributes:
-      - NewTodayUpload
-      - NewTodayDownload
-      - NewYesterdayUpload
-      - NewYesterdayDownload
-      - NewWeekUpload
-      - NewWeekDownload
-      - NewMonthUpload
-      - NewMonthDownload
-      - NewLastMonthConnectionTime
-      - NewLastMonthUpload
+      - today
+      - yesterday
+      - week
+      - month
+      - lastmonth
