@@ -1,6 +1,7 @@
 config/home-assistant_v2.db
 config/home-assistant_v2.db-wal
 config/home-assistant_v2.db-shm
+config/**/__pycache__
 config/*.log
 config/.google.token
 config/.homekit.state
