@@ -13,7 +13,7 @@ switch: !include switches.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 binary_sensor: !include_dir_merge_list binary_sensors
-history_graph: !include history_graphs.yaml
+history_graph: !include_dir_merge_named history_graphs
 
 logger:
   default: error

@@ -1,0 +1,6 @@
+speedtest:
+  name: Internet Speedtest
+  entities:
+  - sensor.speedtest_upload
+  - sensor.speedtest_download
+  - sensor.speedtest_ping
