@@ -1,8 +1,8 @@
-familie:
+family:
   name: Familie
   entities:
-    - group.jonas
-    - group.marian
+    - group.human_jonas
+    - group.human_marian
 
 human_jonas:
   name: Jonas
