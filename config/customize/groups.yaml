@@ -1,11 +1,11 @@
 # Reorder group tabs
 group.default_view:
   order: 1
-group.corridor:
-  order: 2
 group.jonas:
-  order: 3
+  order: 2
 group.marian:
+  order: 3
+group.corridor:
   order: 4
 group.kitchen:
   order: 5
