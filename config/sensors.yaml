@@ -37,3 +37,8 @@
       friendly_name: "Waschmaschine"
       value_template: "{{ states.switch.waschmaschine.attributes.current_power_w }}"
       unit_of_measurement: W
+
+# Custom sensors for Hue (dimmers and motion detectors) (https://github.com/robmarkcole/Hue-sensors-HASS)
+- platform: hue
+  ip_address: !secret hue_host
+  token: !secret hue_token
