@@ -1,0 +1,16 @@
+- platform: template
+  sensors:
+    speedtest_upload:
+      friendly_name: "Upload speed"
+      value_template: "{{ states.sensor.speedtest.attributes.upload }}"
+      unit_of_measurement: MBit
+
+    speedtest_download:
+      friendly_name: "Download speed"
+      value_template: "{{ states.sensor.speedtest.attributes.download }}"
+      unit_of_measurement: MBit
+
+    speedtest_ping:
+      friendly_name: "Ping"
+      value_template: "{{ states.sensor.speedtest.attributes.ping }}"
+      unit_of_measurement: ms
