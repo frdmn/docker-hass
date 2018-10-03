@@ -48,4 +48,8 @@ container_and_services:
 netgear_traffic:
   name: Internet Traffic
   entities:
-  - sensor.netgear_traffic
+  - sensor.netgear_traffic_today
+  - sensor.netgear_traffic_yesterday
+  - sensor.netgear_traffic_week
+  - sensor.netgear_traffic_month
+  - sensor.netgear_traffic_lastmonth
