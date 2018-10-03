@@ -1,15 +1,15 @@
 - platform: command_line
   name: Speedtest Upload
-  command: "curl $(hostname -I | awk '{print $1}'):8086/query?db=speedtest --data-urlencode 'q=SELECT * FROM "upload" ORDER BY DESC LIMIT 1'"
+  command: "curl $(hostname -I | awk '{print $1}'):8086/query?db=speedtest --data-urlencode 'q=SELECT * FROM upload ORDER BY DESC LIMIT 1'"
   json_attributes:
     - results[0].series[0].values[2]
 
   name: Speedtest Download
-  command: "curl $(hostname -I | awk '{print $1}'):8086/query?db=speedtest --data-urlencode 'q=SELECT * FROM "download" ORDER BY DESC LIMIT 1'"
+  command: "curl $(hostname -I | awk '{print $1}'):8086/query?db=speedtest --data-urlencode 'q=SELECT * FROM download ORDER BY DESC LIMIT 1'"
   json_attributes:
     - results[0].series[0].values[2]
 
   name: Speedtest Ping
-  command: "curl $(hostname -I | awk '{print $1}'):8086/query?db=speedtest --data-urlencode 'q=SELECT * FROM "ping" ORDER BY DESC LIMIT 1'"
+  command: "curl $(hostname -I | awk '{print $1}'):8086/query?db=speedtest --data-urlencode 'q=SELECT * FROM ping ORDER BY DESC LIMIT 1'"
   json_attributes:
     - results[0].series[0].values[2]
