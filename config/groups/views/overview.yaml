@@ -8,7 +8,7 @@ default_view:
     - group.octoprint
     - group.container_and_services
     - group.netgear_traffic
-    - group.speedtest
+    - history_graph.speedtest
     - history_graph.stromverbrauch
 
 heating:
@@ -54,10 +54,3 @@ netgear_traffic:
   - sensor.netgear_traffic_week
   - sensor.netgear_traffic_month
   - sensor.netgear_traffic_lastmonth
-
-speedtest:
-  name: Internet Speedtest
-  entities:
-  - sensor.speedtest_upload
-  - sensor.speedtest_download
-  - sensor.speedtest_ping
