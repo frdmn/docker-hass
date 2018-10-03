@@ -1,0 +1,9 @@
+# Tado heating/climate names
+sensor.jonas_humidity:
+  friendly_name: Luftfeuchtigkeit
+sensor.marian_humidity:
+  friendly_name: Luftfeuchtigkeit
+sensor.jonas_heating:
+  friendly_name: Heiz-Zustand
+sensor.marian_heating:
+  friendly_name: Heiz-Zustand

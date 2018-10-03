@@ -1,0 +1,9 @@
+# Dark Sky friendly names
+sensor.dark_sky_cloud_coverage:
+  friendly_name: Bedeckungsgrad
+sensor.dark_sky_precip_probability:
+  friendly_name: Regenwahrscheinlichkeit
+sensor.dark_sky_summary:
+  friendly_name: Überblick
+sensor.dark_sky_temperature:
+  friendly_name: Termperatur
