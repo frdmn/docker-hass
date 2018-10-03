@@ -26,31 +26,31 @@ family_presence:
 weather:
   name: Wetter
   entities:
-  - sensor.dark_sky_summary
-  - sensor.dark_sky_temperature
-  - sensor.dark_sky_precip_probability
-  - sensor.dark_sky_cloud_coverage
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_precip_probability
+    - sensor.dark_sky_cloud_coverage
 
 container_and_services:
   name: Containers / Services
   entities:
-  - binary_sensor.container_muximux
-  - binary_sensor.container_netdata
-  - binary_sensor.container_ombi
-  - binary_sensor.container_openvpn
-  - binary_sensor.container_owntracks
-  - binary_sensor.container_plex
-  - binary_sensor.container_radarr
-  - binary_sensor.container_sabnzbd
-  - binary_sensor.container_sonarr
-  - binary_sensor.container_speedtester
-  - binary_sensor.tcp_octoprint
+    - binary_sensor.container_muximux
+    - binary_sensor.container_netdata
+    - binary_sensor.container_ombi
+    - binary_sensor.container_openvpn
+    - binary_sensor.container_owntracks
+    - binary_sensor.container_plex
+    - binary_sensor.container_radarr
+    - binary_sensor.container_sabnzbd
+    - binary_sensor.container_sonarr
+    - binary_sensor.container_speedtester
+    - binary_sensor.tcp_octoprint
 
 netgear_traffic:
   name: Nutzung Bandbreite
   entities:
-  - sensor.netgear_traffic_today
-  - sensor.netgear_traffic_yesterday
-  - sensor.netgear_traffic_week
-  - sensor.netgear_traffic_month
-  - sensor.netgear_traffic_lastmonth
+    - sensor.netgear_traffic_today
+    - sensor.netgear_traffic_yesterday
+    - sensor.netgear_traffic_week
+    - sensor.netgear_traffic_month
+    - sensor.netgear_traffic_lastmonth

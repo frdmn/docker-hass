@@ -2,11 +2,11 @@
   alias: Send notifications when someone arrives at home
   trigger:
     platform: state
-    from: 'not_home'
-    to: 'home'
+    from: "not_home"
+    to: "home"
     entity_id:
-    - group.human_jonas
-    - group.human_marian
+      - group.human_jonas
+      - group.human_marian
   action:
     service: notify.telegram_jonas
     data_template:
@@ -17,11 +17,11 @@
   alias: Send notifications when someone leaves from home
   trigger:
     platform: state
-    from: 'home'
-    to: 'not_home'
+    from: "home"
+    to: "not_home"
     entity_id:
-    - group.human_jonas
-    - group.human_marian
+      - group.human_jonas
+      - group.human_marian
   action:
     service: notify.telegram_jonas
     data_template:
