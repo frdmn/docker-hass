@@ -1,21 +1,3 @@
-- platform: darksky
-  api_key: !secret darksky_key
-  language: de
-  monitored_conditions:
-    - cloud_cover
-    - precip_probability
-    - summary
-    - temperature
-
-- platform: octoprint
-  name: OctoPrint
-  monitored_conditions:
-    - Current State
-    - Temperatures
-    - Job Percentage
-    - Time Elapsed
-    - Time Remaining
-
 - platform: template
   sensors:
     3d_drucker_power:
@@ -37,8 +19,3 @@
       friendly_name: "Waschmaschine"
       value_template: "{{ states.switch.waschmaschine.attributes.current_power_w }}"
       unit_of_measurement: W
-
-# Custom sensors for Hue (dimmers and motion detectors) (https://github.com/robmarkcole/Hue-sensors-HASS)
-- platform: hue
-  ip_address: !secret hue_host
-  token: !secret hue_token
