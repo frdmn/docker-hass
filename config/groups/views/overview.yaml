@@ -1,8 +1,8 @@
 default_view:
-  name: "Home"
+  name: "Übersicht"
   view: yes
   entities:
-    - group.family_info
+    - group.family_presence
     - group.heating
     - group.weather
     - group.octoprint
@@ -16,8 +16,8 @@ heating:
     - climate.jonas
     - climate.marian
 
-family_info:
-  name: Familie
+family_presence:
+  name: Anwesenheit
   entities:
     - group.human_jonas
     - group.human_marian
@@ -46,7 +46,7 @@ container_and_services:
   - binary_sensor.tcp_octoprint
 
 netgear_traffic:
-  name: Internet Traffic
+  name: Nutzung Bandbreite
   entities:
   - sensor.netgear_traffic_today
   - sensor.netgear_traffic_yesterday
