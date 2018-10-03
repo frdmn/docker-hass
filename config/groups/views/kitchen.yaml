@@ -1,10 +1,10 @@
-kueche:
+kitchen:
   name: Küche
   view: yes
   entities:
-    - group.kueche_lights
+    - group.kitchen_lights
 
-kueche_lights:
-  name: Küchen Lampen
+kitchen_lights:
+  name: Lampen
   entities:
     - light.deckenlampe_2
