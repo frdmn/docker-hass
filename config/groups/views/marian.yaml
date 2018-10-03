@@ -6,7 +6,7 @@ marian:
     - group.marian_climate
 
 marian_lights:
-  name: Marian's Lampen
+  name: Lampen
   entities:
     - light.deckenlampe_4
     - light.bodenlampe
