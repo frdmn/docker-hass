@@ -23,22 +23,16 @@
       value_template: "{{ states.switch['3d_drucker'].attributes.current_power_w }}"
       unit_of_measurement: W
 
-- platform: template
-  sensors:
     nas_power:
       friendly_name: "NAS"
       value_template: "{{ states.switch.nas.attributes.current_power_w }}"
       unit_of_measurement: W
 
-- platform: template
-  sensors:
     tvmedia_power:
       friendly_name: "TV/Media"
       value_template: "{{ states.switch.tvmedia.attributes.current_power_w }}"
       unit_of_measurement: W
 
-- platform: template
-  sensors:
     waschmaschine_power:
       friendly_name: "Waschmaschine"
       value_template: "{{ states.switch.waschmaschine.attributes.current_power_w }}"
