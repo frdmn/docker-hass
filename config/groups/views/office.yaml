@@ -1,15 +1,15 @@
-buero:
+office:
   name: Büro
   view: yes
   entities:
-    - group.buero_lights
+    - group.office_lights
     - group.container_and_services
     - group.nas
     - group.octoprint
     - history_graph.stromverbrauch_buro
 
-buero_lights:
-  name: Büro Lampen
+office_lights:
+  name: Lampen
   entities:
     - light.deckenlampe_6
 
