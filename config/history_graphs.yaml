@@ -22,8 +22,8 @@ power_office:
       - sensor.3d_drucker_power
       - sensor.nas_power
 
-power_office:
-    name: Stromverbrauch Büro
+speedtest:
+    name: Internet Speedtest
     entities:
       - sensor.speedtest_upload
       - sensor.speedtest_download
