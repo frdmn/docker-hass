@@ -13,3 +13,7 @@ group.office:
   order: 6
 group.bathroom:
   order: 7
+
+# Hide NAS group to prevent someone turning off its switch
+group.nas:
+  hidden: true
