@@ -1,9 +1,9 @@
-  - platform: command_line
-    name: Netgear traffic
-    command: "/config/scripts/opt/runcached -c 300 /config/scripts/netgear_traffic.py"
-    json_attributes:
-      - today
-      - yesterday
-      - week
-      - month
-      - lastmonth
+- platform: command_line
+  name: Netgear traffic
+  command: "/config/scripts/opt/runcached -c 300 /config/scripts/netgear_traffic.py"
+  json_attributes:
+    - today
+    - yesterday
+    - week
+    - month
+    - lastmonth
