@@ -1,0 +1,15 @@
+# Reorder group tabs
+group.default_view:
+  order: 1
+group.corridor:
+  order: 2
+group.jonas:
+  order: 3
+group.marian:
+  order: 4
+group.kitchen:
+  order: 5
+group.office:
+  order: 6
+group.bathroom:
+  order: 7
