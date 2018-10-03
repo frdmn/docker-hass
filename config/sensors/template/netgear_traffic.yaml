@@ -1,0 +1,26 @@
+- platform: template
+  sensors:
+    netgear_traffic_today:
+      friendly_name: "Heute"
+      value_template: "{{ (states.sensor.netgear_traffic.attributes.today / 1024) | round(2) }}"
+      unit_of_measurement: GB
+
+    netgear_traffic_yesterday:
+      friendly_name: "Gestern"
+      value_template: "{{ (states.sensor.netgear_traffic.attributes.yesterday / 1024) | round(2) }}"
+      unit_of_measurement: GB
+
+    netgear_traffic_week:
+      friendly_name: "Aktuelle Woche"
+      value_template: "{{ (states.sensor.netgear_traffic.attributes.week / 1024) | round(2) }}"
+      unit_of_measurement: GB
+
+    netgear_traffic_month:
+      friendly_name: "Aktueller Monat"
+      value_template: "{{ (states.sensor.netgear_traffic.attributes.month / 1024) | round(2) }}"
+      unit_of_measurement: GB
+
+    netgear_traffic_lastmonth:
+      friendly_name: "Letzer Monat"
+      value_template: "{{ (states.sensor.netgear_traffic.attributes.lastmonth / 1024) | round(2) }}"
+      unit_of_measurement: GB
