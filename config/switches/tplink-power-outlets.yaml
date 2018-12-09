@@ -1,12 +1,15 @@
 - platform: tplink
   host: !secret hs110-media_host
   Name: TV/Media
+
 - platform: tplink
   host: !secret hs110-3dprinter_host
   name: 3D Drucker
+
 - platform: tplink
   host: !secret hs110-nas_host
   name: NAS
+
 - platform: tplink
   host: !secret hs110-washer_host
   name: Waschmaschine
