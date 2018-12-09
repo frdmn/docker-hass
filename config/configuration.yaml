@@ -26,16 +26,6 @@ octoprint:
   bed: true
   number_of_tools: 1
 
-device_tracker:
-  - platform: icloud
-    max_interval: 1
-    username: !secret icloud_jonas_user
-    password: !secret icloud_jonas_pass
-  - platform: icloud
-    max_interval: 1
-    username: !secret icloud_marian_user
-    password: !secret icloud_marian_pass
-
 camera:
   - platform: mjpeg
     name: octoprint
