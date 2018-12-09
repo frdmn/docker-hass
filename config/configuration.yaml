@@ -35,13 +35,6 @@ device_tracker:
     max_interval: 1
     username: !secret icloud_marian_user
     password: !secret icloud_marian_pass
-  - platform: netgear
-    host: !secret netgear_host
-    username: !secret netgear_user
-    password: !secret netgear_pass
-    new_device_defaults:
-      track_new_devices: True
-      hide_if_away: False
 
 camera:
   - platform: mjpeg
