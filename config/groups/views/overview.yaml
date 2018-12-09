@@ -34,16 +34,16 @@ weather:
 container_and_services:
   name: Containers / Services
   entities:
-    - binary_sensor.container_muximux
-    - binary_sensor.container_netdata
-    - binary_sensor.container_ombi
-    - binary_sensor.container_openvpn
-    - binary_sensor.container_owntracks
-    - binary_sensor.container_plex
-    - binary_sensor.container_radarr
-    - binary_sensor.container_sabnzbd
-    - binary_sensor.container_sonarr
-    - binary_sensor.container_speedtester
+    - switch.muximux
+    - switch.netdata
+    - switch.ombi
+    - switch.openvpn
+    - switch.owntracks
+    - switch.plex
+    - switch.radarr
+    - switch.sabnzbd
+    - switch.sonarr
+    - switch.speedtester
     - binary_sensor.tcp_octoprint
 
 netgear_traffic:
