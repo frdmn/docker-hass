@@ -1,6 +1,20 @@
 - platform: rest
+  resource: http://nas.intern.frd.mn:8126/container/bazarr
+  name: container_bazarr
+  body_on: '{"state": "start"}'
+  body_off: '{"state": "stop"}'
+  is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
+
+- platform: rest
   resource: http://nas.intern.frd.mn:8126/container/muximux
   name: container_muximux
+  body_on: '{"state": "start"}'
+  body_off: '{"state": "stop"}'
+  is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
+
+- platform: rest
+  resource: http://nas.intern.frd.mn:8126/container/hass
+  name: container_hass
   body_on: '{"state": "start"}'
   body_off: '{"state": "stop"}'
   is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
@@ -15,6 +29,13 @@
 - platform: rest
   resource: http://nas.intern.frd.mn:8126/container/ombi
   name: container_ombi
+  body_on: '{"state": "start"}'
+  body_off: '{"state": "stop"}'
+  is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
+
+- platform: rest
+  resource: http://nas.intern.frd.mn:8126/container/oscarr
+  name: container_oscarr
   body_on: '{"state": "start"}'
   body_off: '{"state": "stop"}'
   is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
@@ -48,6 +69,13 @@
   is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
 
 - platform: rest
+  resource: http://nas.intern.frd.mn:8126/container/radarr-bot
+  name: container_radarr-bot
+  body_on: '{"state": "start"}'
+  body_off: '{"state": "stop"}'
+  is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
+
+- platform: rest
   resource: http://nas.intern.frd.mn:8126/container/sabnzbd
   name: container_sabnzbd
   body_on: '{"state": "start"}'
@@ -62,8 +90,22 @@
   is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
 
 - platform: rest
+  resource: http://nas.intern.frd.mn:8126/container/sonarr-bot
+  name: container_sonarr-bot
+  body_on: '{"state": "start"}'
+  body_off: '{"state": "stop"}'
+  is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
+
+- platform: rest
   resource: http://nas.intern.frd.mn:8126/container/speedtester
   name: container_speedtester
+  body_on: '{"state": "start"}'
+  body_off: '{"state": "stop"}'
+  is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
+
+- platform: rest
+  resource: http://nas.intern.frd.mn:8126/container/unifi
+  name: container_unifi
   body_on: '{"state": "start"}'
   body_off: '{"state": "stop"}'
   is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
