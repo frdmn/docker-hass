@@ -55,41 +55,41 @@
 - platform: template
   sensors:
     container_locked_radarr:
-      friendly_name: container_locked_radarr
+      friendly_name: Radarr
       value_template: "{{ is_state('switch.container_radarr', 'on') }}"
 
 - platform: template
   sensors:
     container_locked_radarrbot:
-      friendly_name: container_locked_radarrbot
+      friendly_name: Radarr Telegram Bot
       value_template: "{{ is_state('switch.container_radarrbot', 'on') }}"
 
 - platform: template
   sensors:
     container_locked_sabnzbd:
-      friendly_name: container_locked_sabnzbd
+      friendly_name: SabNZBd
       value_template: "{{ is_state('switch.container_sabnzbd', 'on') }}"
 
 - platform: template
   sensors:
     container_locked_sonarr:
-      friendly_name: container_locked_sonarr
+      friendly_name: Sonarr
       value_template: "{{ is_state('switch.container_sonarr', 'on') }}"
 
 - platform: template
   sensors:
     container_locked_sonarrbot:
-      friendly_name: container_locked_sonarrbot
+      friendly_name: Sonarr Telegram Bot
       value_template: "{{ is_state('switch.container_sonarrbot', 'on') }}"
 
 - platform: template
   sensors:
     container_locked_speedtester:
-      friendly_name: container_locked_speedtester
+      friendly_name: Speedtester
       value_template: "{{ is_state('switch.container_speedtester', 'on') }}"
 
 - platform: template
   sensors:
     container_locked_unifi:
-      friendly_name: container_locked_unifi
+      friendly_name: UniFi WiFi Controller
       value_template: "{{ is_state('switch.container_unifi', 'on') }}"
