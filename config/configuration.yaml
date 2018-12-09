@@ -74,7 +74,7 @@ updater:
 # Discover some devices automatically
 discovery:
   ignore:
-    - plex
+    - plex_mediaserver
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
