@@ -1,0 +1,95 @@
+- platform: template
+  sensors:
+    container_locked_bazarr:
+      friendly_name: Bazarr
+      value_template: "{{ is_state('switch.container_bazarr', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_muximux:
+      friendly_name: Muximux
+      value_template: "{{ is_state('switch.container_muximux', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_hass:
+      friendly_name: Home Assistant
+      value_template: "{{ is_state('switch.container_hass', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_netdata:
+      friendly_name: Netdata
+      value_template: "{{ is_state('switch.container_netdata', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_ombi:
+      friendly_name: Ombi
+      value_template: "{{ is_state('switch.container_ombi', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_oscarr:
+      friendly_name: Oscarr
+      value_template: "{{ is_state('switch.container_oscarr', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_openvpn:
+      friendly_name: OpenVPN
+      value_template: "{{ is_state('switch.container_openvpn', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_owntracks:
+      friendly_name: OwnTracks
+      value_template: "{{ is_state('switch.container_owntracks', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_plex:
+      friendly_name: Plex Media Server
+      value_template: "{{ is_state('switch.container_plex', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_radarr:
+      friendly_name: container_locked_radarr
+      value_template: "{{ is_state('switch.container_radarr', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_radarrbot:
+      friendly_name: container_locked_radarrbot
+      value_template: "{{ is_state('switch.container_radarrbot', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_sabnzbd:
+      friendly_name: container_locked_sabnzbd
+      value_template: "{{ is_state('switch.container_sabnzbd', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_sonarr:
+      friendly_name: container_locked_sonarr
+      value_template: "{{ is_state('switch.container_sonarr', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_sonarrbot:
+      friendly_name: container_locked_sonarrbot
+      value_template: "{{ is_state('switch.container_sonarrbot', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_speedtester:
+      friendly_name: container_locked_speedtester
+      value_template: "{{ is_state('switch.container_speedtester', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_unifi:
+      friendly_name: container_locked_unifi
+      value_template: "{{ is_state('switch.container_unifi', 'on') }}"

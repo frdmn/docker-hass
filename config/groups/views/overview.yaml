@@ -34,22 +34,22 @@ weather:
 container_and_services:
   name: Containers / Services
   entities:
-    - switch.container_bazarr
-    - switch.container_hass
-    - switch.container_muximux
-    - switch.container_netdata
-    - switch.container_ombi
-    - switch.container_openvpn
-    - switch.container_oscarr
-    - switch.container_owntracks
-    - switch.container_plex
-    - switch.container_radarr
-    - switch.container_radarrbot
-    - switch.container_sabnzbd
-    - switch.container_sonarr
-    - switch.container_sonarrbot
-    - switch.container_speedtester
-    - switch.container_unifi
+    - binary_sensor.container_locked_bazarr
+    - binary_sensor.container_locked_hass
+    - binary_sensor.container_locked_muximux
+    - binary_sensor.container_locked_netdata
+    - binary_sensor.container_locked_ombi
+    - binary_sensor.container_locked_openvpn
+    - binary_sensor.container_locked_oscarr
+    - binary_sensor.container_locked_owntracks
+    - binary_sensor.container_locked_plex
+    - binary_sensor.container_locked_radarr
+    - binary_sensor.container_locked_radarrbot
+    - binary_sensor.container_locked_sabnzbd
+    - binary_sensor.container_locked_sonarr
+    - binary_sensor.container_locked_sonarrbot
+    - binary_sensor.container_locked_speedtester
+    - binary_sensor.container_locked_unifi
     - binary_sensor.tcp_octoprint
 
 netgear_traffic:
