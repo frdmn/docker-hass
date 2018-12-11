@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+HOST=$(/config/scripts/_get_secret edgemax_snmp_host)
+COMMUNITY=$(/config/scripts/_get_secret edgemax_snmp_community)
+IFACE=$(/config/scripts/_get_secret edgemax_snmp_wan_interface)
+
+SAMPLE=5
+
+# Run first probe
+D1=$(snmpget -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.10.${IFACE} | cut -d ' ' -f2)
+U1=$(snmpget -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.16.${IFACE} | cut -d ' ' -f2)
+
+# Wait $SAMPLE seconds
+sleep ${SAMPLE}
+
+# Run second probe
+D2=$(snmpget -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.10.${IFACE} | cut -d ' ' -f2)
+U2=$(snmpget -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.16.${IFACE} | cut -d ' ' -f2)
+
+# Calculate difference between them
+D=$((($D2-$D1)/$SAMPLE))
+U=$((($U2-$U1)/$SAMPLE))
+
+# Construct and output JSON
+JSON="""{
+    \"download\":\"${D}\",
+    \"upload\":\"${U}\"
+}
+"""
+
+echo ${JSON}
+exit 0

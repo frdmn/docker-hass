@@ -1,0 +1,6 @@
+- platform: command_line
+  name: EdgeMax Router traffic
+  command: "/config/scripts/snmp_throughput"
+  json_attributes:
+    - download
+    - upload
