@@ -7,7 +7,7 @@ default_view:
     - group.weather
     - group.octoprint
     - group.container_and_services
-    - history_graph.snmp_troughput
+    - history_graph.edgemax_throughput
     - history_graph.stromverbrauch
     - history_graph.internet_speedtest
 
