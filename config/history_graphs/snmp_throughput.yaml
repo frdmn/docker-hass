@@ -1,0 +1,5 @@
+snmp_throughput:
+  name: EdgeMax Traffic/Durchsatz
+  entities:
+    - sensor.edgemax_throughput_upload
+    - sensor.edgemax_throughput_download

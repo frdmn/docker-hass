@@ -7,9 +7,9 @@ default_view:
     - group.weather
     - group.octoprint
     - group.container_and_services
-    - group.netgear_traffic
-    - history_graph.internet_speedtest
+    - history_graph.snmp_troughput
     - history_graph.stromverbrauch
+    - history_graph.internet_speedtest
 
 heating:
   name: Heizung
@@ -51,12 +51,3 @@ container_and_services:
     - binary_sensor.container_locked_speedtester
     - binary_sensor.container_locked_unifi
     - binary_sensor.tcp_octoprint
-
-netgear_traffic:
-  name: Nutzung Bandbreite
-  entities:
-    - sensor.netgear_traffic_today
-    - sensor.netgear_traffic_yesterday
-    - sensor.netgear_traffic_week
-    - sensor.netgear_traffic_month
-    - sensor.netgear_traffic_lastmonth
