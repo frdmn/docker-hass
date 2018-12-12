@@ -6,15 +6,15 @@ IFACE=$(/config/scripts/helper/_get_secret edgemax_snmp_wan_interface)
 SAMPLE=5
 
 # Run first probe
-D1=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.10.${IFACE} | cut -d ' ' -f2)
-U1=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.16.${IFACE} | cut -d ' ' -f2)
+D1=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.31.1.1.1.6${IFACE} | cut -d ' ' -f2)
+U1=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.31.1.1.1.10.${IFACE} | cut -d ' ' -f2)
 
 # Wait $SAMPLE seconds
 sleep ${SAMPLE}
 
 # Run second probe
-D2=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.10.${IFACE} | cut -d ' ' -f2)
-U2=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.16.${IFACE} | cut -d ' ' -f2)
+D2=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.31.1.1.1.6.${IFACE} | cut -d ' ' -f2)
+U2=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.31.1.1.1.10.${IFACE} | cut -d ' ' -f2)
 
 # Calculate difference between them
 D=$((($D2-$D1)/$SAMPLE*8))
