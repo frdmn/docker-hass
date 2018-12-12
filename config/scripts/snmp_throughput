@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-HOST=$(/config/scripts/_get_secret edgemax_snmp_host)
-COMMUNITY=$(/config/scripts/_get_secret edgemax_snmp_community)
-IFACE=$(/config/scripts/_get_secret edgemax_snmp_wan_interface)
+HOST=$(/config/scripts/helper/_get_secret edgemax_snmp_host)
+COMMUNITY=$(/config/scripts/helper/_get_secret edgemax_snmp_community)
+IFACE=$(/config/scripts/helper/_get_secret edgemax_snmp_wan_interface)
 
 SAMPLE=5
 
