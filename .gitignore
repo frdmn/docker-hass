@@ -14,3 +14,5 @@ config/hass/plex.conf
 config/hass/secrets.yaml
 config/hass/ssl
 config/hass/tts
+config/owntracks/*
+!config/owntracks/.gitkeep
