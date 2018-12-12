@@ -1,6 +1,6 @@
 - platform: command_line
   name: Speedtest
-  command: "/config/scripts/speedtest.sh"
+  command: "/config/scripts/speedtest"
   json_attributes:
     - upload
     - download
