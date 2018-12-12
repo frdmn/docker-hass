@@ -17,8 +17,8 @@ D2=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.10.${IFACE} | c
 U2=$(snmpget -v2c -c ${COMMUNITY} -O q ${HOST} 1.3.6.1.2.1.2.2.1.16.${IFACE} | cut -d ' ' -f2)
 
 # Calculate difference between them
-D=$((($D2-$D1)/$SAMPLE))
-U=$((($U2-$U1)/$SAMPLE))
+D=$((($D2-$D1)/$SAMPLE*8))
+U=$((($U2-$U1)/$SAMPLE*8))
 
 # Construct and output JSON
 JSON="""{
