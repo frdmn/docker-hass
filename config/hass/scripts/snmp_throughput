@@ -29,6 +29,3 @@ JSON="""{
 
 echo ${JSON}
 exit 0
-
-
-/1048576
