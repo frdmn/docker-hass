@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  hass:
+    restart: always
+    container_name: hass
+    image: homeassistant/home-assistant:${HASS_IMAGEVERSION}
+    network_mode: "host"
+    volumes:
+    - ./config/hass:/config
+    environment:
+    - "TZ=${TZ}"
+
+  dockermon:
+    restart: always
+    container_name: dockermon
+    image: philhawthorne/ha-dockermon:${DOCKERMON_IMAGEVERSION}
+    volumes:
+      - ./config/dockermon:/config
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - ${DOCKERMON_PORT}:8126
+
+  owntracks:
+    restart: always
+    container_name: owntracks
+    image: owntracks/recorderd:${OWNTRACKS_IMAGEVERSION}
+    ports:
+    - ${OWNTRACKS_PORT_MQTT}:1883
+    - ${OWNTRACKS_PORT_MQTTTLS}:8883
+    - ${OWNTRACKS_PORT_WEB}:8083
+    volumes:
+    - ./config/owntracks:/owntracks
+    environment:
+    - "MQTTHOSTNAME=${OWNTRACKS_MQTTHOSTNAME}"
+    - "IPLIST=${OWNTRACKS_IPLIST}"
+    - "HOSTLIST=${OWNTRACKS_HOSTLIST}"
+    - "TZ=${TZ}"
