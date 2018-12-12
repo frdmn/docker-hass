@@ -1,3 +1,4 @@
+.env
 config/hass/home-assistant_v2.db
 config/hass/home-assistant_v2.db-wal
 config/hass/home-assistant_v2.db-shm
