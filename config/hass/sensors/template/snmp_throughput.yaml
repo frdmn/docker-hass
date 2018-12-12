@@ -2,10 +2,10 @@
   sensors:
     edgemax_throughput_upload:
       friendly_name: "Upload"
-      value_template: "{{ ((states.sensor.snmp_throughput.attributes.upload | int) / 1024) | round(2) }}"
+      value_template: "{{ ((states.sensor.snmp_throughput.attributes.upload | int) / 1024 / 1024) | round(2) }}"
       unit_of_measurement: Mbit
 
     edgemax_throughput_download:
       friendly_name: "Download"
-      value_template: "{{ ((states.sensor.snmp_throughput.attributes.download | int) / 1024) | round(2) }}"
+      value_template: "{{ ((states.sensor.snmp_throughput.attributes.download | int) / 1024 / 1024) | round(2) }}"
       unit_of_measurement: Mbit
