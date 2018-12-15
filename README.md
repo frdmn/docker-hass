@@ -1,6 +1,6 @@
 # docker-hass
 
-My docker-compose [Home Assistant](https://www.home-assistant.io/) setup.
+My docker-compose [Home Assistant](https://www.home-assistant.io/) setup as well as configuration files.
 
 ## Installation
 
