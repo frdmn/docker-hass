@@ -13,6 +13,7 @@ My docker-compose [Home Assistant](https://www.home-assistant.io/) setup includi
 - Speedtest graphing
 - (soon) Nokia Body (previously Withings) scale sensors
 - (soon) Ubiquiti access point utilization
+- (soon) Persistent and arranged HomeKit configuration
 
 ## Installation
 
