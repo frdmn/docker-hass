@@ -1,6 +1,18 @@
 # docker-hass
 
-My docker-compose [Home Assistant](https://www.home-assistant.io/) setup as well as configuration files.
+My docker-compose [Home Assistant](https://www.home-assistant.io/) setup including configuration files for:
+
+- Philips Hue lights
+- In-house device tracking based on Owntracks and BLT beacons
+- Power consumption of office, TV/media rack and washer
+- Docker Container status
+- TCP status (for non Dockerized services)
+- EdgeMax router throughput
+- OctoPrint sensors
+- Tado smart heating
+- Speedtest graphing
+- (soon) Nokia Body (previously Withings) scale sensors
+- (soon) Ubiquiti access point utilization
 
 ## Installation
 
