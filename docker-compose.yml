@@ -9,7 +9,7 @@ services:
     volumes:
     - ./config/hass:/config
     environment:
-    - "PATH=/config/scripts/helper:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    - "PATH=/config/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
     - "TZ=${TZ}"
 
   dockermon:

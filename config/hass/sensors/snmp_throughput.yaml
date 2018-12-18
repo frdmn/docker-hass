@@ -1,6 +1,6 @@
 - platform: command_line
   name: SNMP throughput
-  command: "/config/scripts/snmp_throughput"
+  command: "snmp_throughput"
   json_attributes:
     - download
     - upload
