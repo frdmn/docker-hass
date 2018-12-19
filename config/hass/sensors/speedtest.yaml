@@ -1,6 +1,6 @@
 - platform: command_line
   name: Speedtest
-  command: "/config/scripts/speedtest"
+  command: "grafana_speedtest"
   json_attributes:
     - upload
     - download
