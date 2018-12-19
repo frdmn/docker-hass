@@ -90,8 +90,8 @@
   is_on_template: '{{ value_json is not none and value_json.state == "running" }}'
 
 - platform: rest
-  resource: http://nas.intern.frd.mn:8126/container/speedtester
-  name: container_speedtester
+  resource: http://nas.intern.frd.mn:8126/container/speedtest
+  name: container_speedtest
   body_on: '{"state": "start"}'
   body_off: '{"state": "stop"}'
   is_on_template: '{{ value_json is not none and value_json.state == "running" }}'

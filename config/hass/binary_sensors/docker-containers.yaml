@@ -78,9 +78,9 @@
 
 - platform: template
   sensors:
-    container_locked_speedtester:
-      friendly_name: Speedtester
-      value_template: "{{ is_state('switch.container_speedtester', 'on') }}"
+    container_locked_speedtest:
+      friendly_name: Speedtest
+      value_template: "{{ is_state('switch.container_speedtest', 'on') }}"
 
 - platform: template
   sensors:

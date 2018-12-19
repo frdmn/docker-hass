@@ -47,6 +47,6 @@ container_and_services:
     - binary_sensor.container_locked_sabnzbd
     - binary_sensor.container_locked_sonarr
     - binary_sensor.container_locked_sonarrbot
-    - binary_sensor.container_locked_speedtester
+    - binary_sensor.container_locked_speedtest
     - binary_sensor.container_locked_unifi
     - binary_sensor.tcp_octoprint
