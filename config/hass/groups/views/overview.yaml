@@ -35,6 +35,7 @@ container_and_services:
   name: Containers / Services
   entities:
     - binary_sensor.container_locked_bazarr
+    - binary_sensor.container_locked_grafana
     - binary_sensor.container_locked_hass
     - binary_sensor.container_locked_muximux
     - binary_sensor.container_locked_ombi

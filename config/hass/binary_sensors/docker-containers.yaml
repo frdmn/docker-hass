@@ -6,15 +6,21 @@
 
 - platform: template
   sensors:
-    container_locked_muximux:
-      friendly_name: Muximux
-      value_template: "{{ is_state('switch.container_muximux', 'on') }}"
+    container_locked_grafana:
+      friendly_name: Grafana
+      value_template: "{{ is_state('switch.container_grafana', 'on') }}"
 
 - platform: template
   sensors:
     container_locked_hass:
       friendly_name: Home Assistant
       value_template: "{{ is_state('switch.container_hass', 'on') }}"
+
+- platform: template
+  sensors:
+    container_locked_muximux:
+      friendly_name: Muximux
+      value_template: "{{ is_state('switch.container_muximux', 'on') }}"
 
 - platform: template
   sensors:
