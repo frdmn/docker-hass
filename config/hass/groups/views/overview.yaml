@@ -37,6 +37,7 @@ container_and_services:
     - binary_sensor.container_locked_bazarr
     - binary_sensor.container_locked_grafana
     - binary_sensor.container_locked_hass
+    - binary_sensor.container_locked_influxdb
     - binary_sensor.container_locked_muximux
     - binary_sensor.container_locked_ombi
     - binary_sensor.container_locked_openvpn

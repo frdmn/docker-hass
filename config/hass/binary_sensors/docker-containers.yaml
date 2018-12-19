@@ -18,6 +18,12 @@
 
 - platform: template
   sensors:
+    container_locked_influxdb:
+      friendly_name: InfluxDB
+      value_template: "{{ is_state('switch.container_influxdb', 'on') }}"
+
+- platform: template
+  sensors:
     container_locked_muximux:
       friendly_name: Muximux
       value_template: "{{ is_state('switch.container_muximux', 'on') }}"
