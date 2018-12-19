@@ -43,7 +43,7 @@ You can make use of the following environment variables / configurations:
 | Environment variable | Default value | Description
 |----------------------|---------------|------------|
 | `TZ` | `Europe/Berlin` | Default timezone |
-| `HASS_IMAGEVERSION` | `0.77.3` | Image version for Home Assistant |
+| `HASS_IMAGEVERSION` | `0.84.4` | Image version for Home Assistant |
 | `DOCKERMON_IMAGEVERSION` | `v0.0.10` | Image version for docker-mon |
 | `DOCKERMON_PORT` | `8126` | Default port for docker-mon |
 | `OWNTRACKS_IMAGEVERSION` | `latest` | Image version for Owntracks |
