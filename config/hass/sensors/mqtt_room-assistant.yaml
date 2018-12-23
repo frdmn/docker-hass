@@ -1,0 +1,6 @@
+- platform: mqtt_room
+  device_id: !secret mqtt_tracker_jonas
+  name: 'Jonas Bluetooth Tracker'
+  state_topic: 'room_presence'
+  timeout: 5
+  away_timeout: 10
