@@ -20,6 +20,12 @@ logger:
   logs:
     homeassistant.components.shell_command: debug
 
+mqtt:
+  broker: !secret mqtt_host
+  port: !secret mqtt_port
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+
 octoprint:
   host: !secret octoprint_host
   api_key: !secret octoprint_key
