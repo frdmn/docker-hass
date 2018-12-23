@@ -21,6 +21,7 @@ logger:
     homeassistant.components.shell_command: debug
 
 mqtt:
+  discovery: true
   broker: !secret mqtt_host
   port: !secret mqtt_port
   username: !secret mqtt_username
