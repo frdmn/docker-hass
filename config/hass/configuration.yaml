@@ -60,6 +60,12 @@ notify:
     platform: telegram
     chat_id: !secret telegram_chatid_jonas
 
+# HomeKit
+homekit:
+  filter:
+    include_domains:
+      - light
+
 # Enables the frontend
 frontend:
 
@@ -100,6 +106,3 @@ sun:
 
 # Cloud
 cloud:
-
-# HomeKit
-homekit:
