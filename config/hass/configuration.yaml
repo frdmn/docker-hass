@@ -68,12 +68,12 @@ discovery:
   ignore:
     - plex_mediaserver
 
+http:
+  api_password: !secret hass_api_pass
+
 frontend:
 
 config:
-
-http:
-  api_password: !secret hass_api_pass
 
 updater:
 
