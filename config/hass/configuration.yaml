@@ -67,6 +67,7 @@ homekit:
       - light.bad
       - light.jonas
       - light.marian
+      - light.marian_2
       - light.flur
       - light.kuche
       - light.buro
