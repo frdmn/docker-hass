@@ -63,6 +63,13 @@ homekit:
   filter:
     include_domains:
       - light
+    exclude_entities:
+      - light.bad
+      - light.jonas
+      - light.marian
+      - light.flur
+      - light.kuche
+      - light.buro
 
 discovery:
   ignore:
