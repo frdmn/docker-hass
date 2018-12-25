@@ -67,6 +67,10 @@ homekit:
       - light
 
 # Enables the frontend
+discovery:
+  ignore:
+    - plex_mediaserver
+
 frontend:
 
 # Enables configuration UI
@@ -85,10 +89,6 @@ updater:
   # include_used_components: true
 
 # Discover some devices automatically
-discovery:
-  ignore:
-    - plex_mediaserver
-
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
