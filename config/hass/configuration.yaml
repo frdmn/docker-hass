@@ -63,6 +63,7 @@ homekit:
   filter:
     include_domains:
       - light
+      - climate
     exclude_entities:
       - light.bad
       - light.jonas
