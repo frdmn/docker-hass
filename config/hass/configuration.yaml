@@ -89,6 +89,9 @@ discovery:
 http:
   api_password: !secret hass_api_pass
 
+recorder:
+  purge_keep_days: 31
+
 frontend:
 
 config:
