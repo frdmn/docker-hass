@@ -12,6 +12,7 @@ jonas_lights:
   entities:
     - light.deckenlampe_5
     - light.stehlampe
+    - light.jonas_nachttischlampe
 
 jonas_climate:
   name: Heizung/Klima
