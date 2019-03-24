@@ -2,10 +2,10 @@
   sensors:
     bathroom_temperature:
       friendly_name: "Badezimmer Temperature"
-      value_template: "{{states.sensor.bad_motion_sensor.attributes.temperature}}"
+      value_template: "{{states.binary_sensor.bad_motion_sensor.attributes.temperature}}"
       unit_of_measurement: °C
 
     bathroom_light_level:
       friendly_name: "Badezimmer Licht Level"
-      value_template: "{{states.sensor.bad_motion_sensor.attributes.lx}}"
+      value_template: "{{states.binary_sensor.bad_motion_sensor.attributes.lx}}"
       unit_of_measurement: lux
