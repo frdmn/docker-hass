@@ -1,0 +1,4 @@
+- platform: yeelight
+  devices:
+    xiaomi-bedside-lamp.intern.frd.mn:
+      name: Jonas Nachttischlampe
