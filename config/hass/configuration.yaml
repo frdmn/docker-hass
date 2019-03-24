@@ -43,6 +43,14 @@ tado:
   username: !secret tado_user
   password: !secret tado_pass
 
+tplink:
+  discovery: false
+  switch:
+    - host: !secret hs110-media_host
+    - host: !secret hs110-3dprinter_host
+    - host: !secret hs110-nas_host
+    - host: !secret hs110-washer_host
+
 tts:
   - platform: amazon_polly
     aws_access_key_id: !secret aws_access

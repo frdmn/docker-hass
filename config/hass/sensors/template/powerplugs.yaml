@@ -12,7 +12,7 @@
 
     tvmedia_power:
       friendly_name: "TV/Media"
-      value_template: "{{ states.switch.tvmedia.attributes.current_power_w }}"
+      value_template: "{{ states.switch.tv_media.attributes.current_power_w }}"
       unit_of_measurement: W
 
     waschmaschine_power:
